@@ -1,0 +1,10 @@
+# Use case: 返回主頁
+appId: com.example.demo
+---
+- launchApp
+- tapOn:
+    text: "Settings|設定|More|更多"
+    optional: true
+- back
+- assertVisible:
+    text: "Home|主頁|首頁|Dashboard"

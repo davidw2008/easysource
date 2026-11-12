@@ -1,0 +1,14 @@
+# Use case: 搜尋關鍵字
+# 請把搜尋框與結果斷言改成你的 App 真實文案／id
+appId: com.example.demo
+---
+- launchApp
+- tapOn:
+    text: "Search|搜尋"
+- tapOn:
+    id: ".*search.*"
+    optional: true
+- inputText: "test"
+- pressKey: Enter
+- assertVisible:
+    text: ".*|結果|Results|No results|找不到"

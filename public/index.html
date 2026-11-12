@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EasySource · Android Use Case Tester</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+TC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <header class="top">
+      <div class="brand">
+        <span class="mark">ES</span>
+        <div>
+          <h1>EasySource Tester</h1>
+          <p id="appMeta">載入設定中…</p>
+        </div>
+      </div>
+      <div class="badges">
+        <span id="modeBadge" class="badge">—</span>
+        <span id="autoBadge" class="badge muted">自動執行：—</span>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="panel">
+        <div class="panel-head">
+          <h2>Use Cases</h2>
+          <button id="refreshBtn" class="ghost" type="button">重新整理</button>
+        </div>
+        <ul id="useCaseList" class="usecase-list"></ul>
+      </section>
+
+      <section class="panel grow">
+        <div class="panel-head">
+          <h2>執行結果</h2>
+          <span id="runStatus" class="status idle">待命</span>
+        </div>
+        <div id="activeRun" class="active-run empty">尚未執行。選擇左側 use case，或開啟自動執行。</div>
+        <pre id="logView" class="log-view" aria-live="polite"></pre>
+        <div id="shotWrap" class="shot-wrap hidden">
+          <img id="shotImg" alt="測試截圖" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <span>本機 ADB + Maestro · 開網頁即可觸發</span>
+      <a href="/docs/SETUP.md" target="_blank" rel="noreferrer">設定說明</a>
+    </footer>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
