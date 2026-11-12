@@ -1,0 +1,9 @@
+# Use case: 進入設定頁
+# 常見入口：設定 / Settings / 齒輪圖示。請按實際 UI 修改。
+appId: com.example.demo
+---
+- launchApp
+- tapOn:
+    text: "Settings|設定|更多|More"
+- assertVisible:
+    text: "Settings|設定"

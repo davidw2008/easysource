@@ -1,0 +1,10 @@
+{
+  "appName": "你的 App 名稱",
+  "appId": "com.example.yourapp",
+  "deviceSerial": "",
+  "autoRunOnOpen": false,
+  "autoRunUseCaseId": "launch_app",
+  "maestroBin": "maestro",
+  "adbBin": "adb",
+  "dryRun": false
+}

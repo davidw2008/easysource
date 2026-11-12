@@ -1,0 +1,19 @@
+{
+  "name": "easysource-android-usecase-tester",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Open a webpage to run Android app use-case tests via Maestro/ADB",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "check": "node scripts/check-env.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "uuid": "^11.1.0"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "useCases": [
+    {
+      "id": "launch_app",
+      "title": "啟動 App",
+      "description": "確認 App 能正常啟動並進入主畫面。",
+      "flow": "flows/launch_app.yaml",
+      "tags": ["smoke", "startup"],
+      "estimatedSeconds": 20
+    },
+    {
+      "id": "smoke_home",
+      "title": "主頁煙霧測試",
+      "description": "啟動後檢查主頁關鍵元素是否可見。",
+      "flow": "flows/smoke_home.yaml",
+      "tags": ["smoke", "home"],
+      "estimatedSeconds": 30
+    },
+    {
+      "id": "navigate_settings",
+      "title": "進入設定頁",
+      "description": "由主頁導航到設定頁，驗證設定標題出現。",
+      "flow": "flows/navigate_settings.yaml",
+      "tags": ["navigation", "settings"],
+      "estimatedSeconds": 35
+    },
+    {
+      "id": "search_keyword",
+      "title": "搜尋關鍵字",
+      "description": "開啟搜尋、輸入關鍵字，確認結果列表出現。",
+      "flow": "flows/search_keyword.yaml",
+      "tags": ["search"],
+      "estimatedSeconds": 40
+    },
+    {
+      "id": "back_to_home",
+      "title": "返回主頁",
+      "description": "從內頁返回主頁，確認主頁元素仍在。",
+      "flow": "flows/back_to_home.yaml",
+      "tags": ["navigation"],
+      "estimatedSeconds": 30
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+# Use case: 主頁煙霧測試
+# 請依你的 App UI 調整 assertVisible 的文字或 id
+appId: com.example.demo
+---
+- launchApp
+- extendedWaitUntil:
+    visible:
+      text: "Home|主頁|首頁|Dashboard"
+    timeout: 10000
+- assertVisible:
+    text: "Home|主頁|首頁|Dashboard"

@@ -1,0 +1,10 @@
+{
+  "appName": "Demo App",
+  "appId": "com.example.demo",
+  "deviceSerial": "",
+  "autoRunOnOpen": true,
+  "autoRunUseCaseId": "launch_app",
+  "maestroBin": "maestro",
+  "adbBin": "adb",
+  "dryRun": true
+}
